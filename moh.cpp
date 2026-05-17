@@ -331,7 +331,7 @@ int main(int argc, char** argv){
 
         int timeLimit = vm["cutoffTime"].as<int>();
         double eps = vm["eps"].as<double>();
-        std::vector<std::string> algorithms = {"AnytimeApexHybrid"};
+        std::vector<std::string> algorithms = {"Apex", "AnytimeApexHybrid"};
 
         for (const auto& region : regions) {
             std::string edgeFile = datasetRoot + "/edges_" + region + ".txt";
